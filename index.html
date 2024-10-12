@@ -8,22 +8,25 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <dialog id="dialog">
+      <h3 class="form-dialog-heading">Add new Book</h3>
+      <form class="form" method="dialog">
+        <input type="text" placeholder="Title" class="form-input" required />
+        <input type="text" placeholder="Author" class="form-input" required/>
+        <input type="number" placeholder="Pages" class="form-input" required/>
+        <div class="form-reading-status">
+          <label class="form-checkbox-label" for="form-checkbox">Read?</label>
+          <input type="checkbox" class="form-checkbox" />
+        </div>
+        <button type="submit" class="form-submit-btn">Submit</button>
+      </form>
+    </dialog>
+
     <div class="main">
-      <div class="head">Samar's Library</div>
-      <div class="container">
-        <div class="buttons">
-          <button>Add Book</button>
-        </div>
-        <div class="books-container">
-        <div class="card">Book</div>
-        <div class="card">Book</div>
-        <div class="card">Book</div>
-        <div class="card">Book</div>
-        <div class="card">Book</div>
-        <div class="card">Book</div>
-        <div class="card">Book</div>
-        <div class="card">Book</div>
-        </div>
+      <div class="header">Samar's Library</div>
+      <div class="content-container">
+        <button class="add-btn">Add Book</button>
+        <div class="books-container"></div>
       </div>
       <div class="footer">
         <a href="https://github.com/samar-exe">
