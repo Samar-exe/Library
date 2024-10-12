@@ -32,3 +32,20 @@ INPUT: Remove Book
 DELETE: Selected Object
 ```
 
+
+#### Gui structure
+
+body
+    main
+        heading
+        content
+            btn 
+            card-container
+                cards
+                    title
+                    author
+                    pages 
+                    status
+        footer
+
+
