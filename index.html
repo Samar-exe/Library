@@ -11,9 +11,9 @@
     <dialog id="dialog">
       <h3 class="form-dialog-heading">Add new Book</h3>
       <form class="form" method="dialog">
-        <input type="text" placeholder="Title" class="form-input" required />
-        <input type="text" placeholder="Author" class="form-input" required/>
-        <input type="number" placeholder="Pages" class="form-input" required/>
+        <input type="text" placeholder="Title" class="form-input titleInput" required />
+        <input type="text" placeholder="Author" class="form-input authorInput" required/>
+        <input type="number" placeholder="Pages" class="form-input noOfPages" required/>
         <div class="form-reading-status">
           <label class="form-checkbox-label" for="form-checkbox">Read?</label>
           <input type="checkbox" class="form-checkbox" />
@@ -23,9 +23,13 @@
     </dialog>
 
     <div class="main">
-      <div class="header">Samar's Library</div>
+      <div class="header">
+        <h3>Samar's Library</h3>
+        <div class="btn-container">
+        <button class="add-btn btn">Add Book</button>
+        </div>
+      </div>
       <div class="content-container">
-        <button class="add-btn">Add Book</button>
         <div class="books-container"></div>
       </div>
       <div class="footer">
