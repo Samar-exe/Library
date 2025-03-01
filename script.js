@@ -29,12 +29,14 @@ let library = {
 };
 
 // Book object constructor
-function Book(title, author, pages, index, check) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.index = index;
-  this.check = check;
+class Book{
+  constructor(title, author, pages, index, check){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.index = index;
+    this.check = check;
+  }
 }
 
 // Event Listeners
